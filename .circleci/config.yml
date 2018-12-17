@@ -48,6 +48,8 @@ jobs:
       - run: 
           name: gradle build
           command: ./gradlew assembleDebug
+
       # deploy
+      - run: 
           name: deploygate upload
           command:  curl -F "token=${KEY}" -F "file=@app/build/outputs/apk/app-debug.apk" -F "message=deployed" https://deploygate.com/api/users/kappa-lab/apps
