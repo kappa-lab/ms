@@ -18,6 +18,7 @@ jobs:
       only:
         - master
         - develop
+        - feature/*
     
     working_directory: ~/repo
 
