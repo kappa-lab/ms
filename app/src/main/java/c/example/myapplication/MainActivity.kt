@@ -10,6 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textView.text = "Morning Circle"
+        textView.text = "Evening Circle"
     }
 }
