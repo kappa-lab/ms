@@ -32,7 +32,7 @@ jobs:
           - v1-dependencies-
 
       - run: gradle dependencies
-
+          command: ./gradlew androidDependencies
       - save_cache:
           paths:
             - ~/.gradle
